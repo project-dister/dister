@@ -1,0 +1,17 @@
+.landing-holder {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #1f1f1f;
+  max-width: 1350px;
+  padding: 0 30px;
+
+  .landing-nav {
+    width: 100%;
+
+    .landing-logo-main {
+      display: block;
+      height: 100px;
+      margin: 0 auto;
+    }
+  }
+}
