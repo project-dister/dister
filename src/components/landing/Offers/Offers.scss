@@ -18,7 +18,7 @@
 
     .offer-item {
       position: relative;
-      width: 600px;
+      width: 95%;
       height: 200px;
       border-radius: 24px;
       margin-bottom: 20px;
@@ -26,8 +26,7 @@
       padding: 0;
       z-index: 11;
       .offer-img {
-        max-width: 200px;
-        max-height: 200px;
+        height: 100%;
         border-radius: 24px;
       }
 
@@ -83,45 +82,163 @@
         }
       }
     }
+  }
 
-    // make offer-item responsive for mobile tablet and desktop by adjusting the width and the image size and center the offer-item
-    @media (max-width: 768px) {
+  // 1200px
+  @media screen and (max-width: 1200px) {
+    .offers-section {
+      h1 {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+
       .offer-item {
-        width: 500px;
-        height: 150px;
-        margin: 0 auto;
-        margin-top: 40px;
-        .offer-img {
-          max-width: 150px;
-          max-height: 150px;
-        }
+        height: 160px;
+
         .offer-item-content {
+          margin-left: 0;
           .offer-item-header {
-            margin-left: 150px;
+            margin-left: 160px;
+            font-size: 1.3rem;
           }
           .seller-profile {
-            left: 165px;
+            left: 175px;
+            span {
+              font-size: 1rem;
+            }
+            .profile-pic {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .contact-button {
+            font-size: 1rem;
           }
         }
       }
     }
+  }
 
-    @media (max-width: 425px) {
+  // 1025px
+  @media screen and (max-width: 1023px) {
+    .offers-section {
+      text-align: center;
+      // margin-top: 0;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+
       .offer-item {
-        width: 300px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 40px;
-        .offer-img {
-          max-width: 100px;
-          max-height: 100px;
-        }
+        height: 190px;
+        width: 600px;
+
+        margin: 20px auto;
         .offer-item-content {
+          margin-left: 0;
           .offer-item-header {
-            margin-left: 100px;
+            margin-left: 180px;
+            font-size: 1.9rem;
           }
           .seller-profile {
-            left: 115px;
+            left: 210px;
+            span {
+              font-size: 1.3rem;
+            }
+            .profile-pic {
+              width: 45px;
+              height: 45px;
+            }
+          }
+          .contact-button {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  // 768px
+  @media screen and (max-width: 767px) {
+    .offers-section {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+
+      .offer-item {
+        height: 150px;
+        width: 500px;
+
+        .offer-item-content {
+          margin-left: 0;
+          .offer-item-header {
+            margin-left: 140px;
+            font-size: 1.5rem;
+          }
+          .seller-profile {
+            left: 160px;
+            span {
+              font-size: 1.1rem;
+            }
+            .profile-pic {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .contact-button {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // 568px
+  @media screen and (max-width: 567px) {
+    .offers-section-left {
+      button {
+        font-size: 1rem;
+        padding: 10px 17px;
+      }
+    }
+    .offers-section {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+
+      .offer-item {
+        height: 110px;
+        width: 330px;
+
+        .offer-item-content {
+          margin-left: 0;
+          .offer-item-header {
+            margin-left: 110px;
+            margin-top: -5px;
+            font-size: 1rem;
+          }
+          .seller-profile {
+            left: 125px;
+            span {
+              display: none;
+            }
+            .profile-pic {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .contact-button {
+            font-size: 0.8rem;
           }
         }
       }

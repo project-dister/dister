@@ -5,6 +5,7 @@ import logo from "../assets/dister-logo.png";
 import Hero from "../components/landing/Hero/Hero";
 import Featured from "../components/landing/Featured/Featured";
 import Offers from "../components/landing/Offers/Offers";
+import Learn from "../components/landing/Learn/Learn";
 
 function Landing() {
   return (
@@ -18,9 +19,10 @@ function Landing() {
         />
       </nav>
       <div className="landing-container">
-        <Hero/>
-        <Featured/>
-        <Offers/>
+        <Hero />
+        <Featured />
+        <Offers />
+        <Learn />
       </div>
     </div>
   );

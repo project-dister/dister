@@ -1,19 +1,43 @@
 .section-title {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5rem;
+  justify-content: left;
+  align-items: left;
+  // margin-bottom: 5rem;
   h2 {
     font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
   }
   img {
     width: 30px;
-    margin-top: -18px;
+    margin-top: -12px;
     margin-left: 7px;
     height: auto;
+  }
+  // make it responsive
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 }

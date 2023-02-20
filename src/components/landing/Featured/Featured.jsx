@@ -30,24 +30,9 @@ function Featured() {
 
   return (
     <div className="featured-section">
-      {/* section title */}
-      {/* <div className="section-title">
-        <div className="flex items-center">
-          <h2 className="dark:text-white">
-            Featured{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-orange-400 from-orange-600 ">
-              Sellers
-            </span>
-          </h2>
-          <img src={arrow} alt="section divider arrow" />
-        </div>
-      </div> */}
       <SectionTitle first="Featured" second="Sellers" />
 
-      {/* <div className="sellers-container"> */}
       <div className="grid grid-cols-3 sellers-container">
-        {/* map through the featured items */}
-
         {featuredItems.map((item) => (
           <FeaturedItem
             key={item.seller + item.occupation}
@@ -57,17 +42,31 @@ function Featured() {
           />
         ))}
       </div>
-      {/* </div> */}
       <div className="socials-container">
         <div className="flex flex-col items-center socials-box">
-          <a href="https://twitter.com/">
-            <img src={twitter} alt="dister twitter profile" srcSet="" />
+          <a href="https://twitter.com/projectDister">
+            <img
+              src={twitter}
+              alt="dister twitter profile"
+              srcSet=""
+              target="_blank"
+            />
           </a>
-          <a href="https://www.instagram.com/">
-            <img src={discord} alt="dister discord channel" srcSet="" />
+          <a href="https://discord.gg/qAWarXxrP2">
+            <img
+              src={discord}
+              alt="dister discord channel"
+              srcSet=""
+              target="_blank"
+            />
           </a>
-          <a href="https://www.facebook.com/">
-            <img src={github} alt="dister github page" srcSet="" />
+          <a href="https://github.com/project-dister">
+            <img
+              src={github}
+              alt="dister github page"
+              srcSet=""
+              target="_blank"
+            />
           </a>
         </div>
       </div>

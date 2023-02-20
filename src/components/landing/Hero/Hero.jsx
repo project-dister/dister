@@ -16,14 +16,13 @@ function Hero() {
           </span>{" "}
           Freelance Marketplace
         </h1>
-        <p className="text-lg font-medium text-gray-500 dark:text-gray-400">
+        <p className="text-lg font-medium text-gray-200 dark:text-gray-200">
           Dister is a decentralized freelance marketplace that allows you to
           hire and get hired for your projects.
         </p>
 
         {/* create sign up single button*/}
         <ActionButton text="Sign Up" link="/signup" />
-        
       </div>
       <div className="hero-section-right">
         <img
