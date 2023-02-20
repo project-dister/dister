@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeaturedItem.scss";
-import base from "../../assets/base-gradient.png";
-import star from "../../assets/star.png";
+import base from "../../../assets/base-gradient.png";
+import star from "../../../assets/star.png";
 
 function FeaturedItem(props) {
   return (

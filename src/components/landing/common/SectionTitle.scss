@@ -1,0 +1,19 @@
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  img {
+    width: 30px;
+    margin-top: -18px;
+    margin-left: 7px;
+    height: auto;
+  }
+}

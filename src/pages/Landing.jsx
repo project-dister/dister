@@ -2,8 +2,9 @@ import React from "react";
 import "./Landing.scss";
 import logo from "../assets/dister-logo.png";
 
-import HeroSection from "../components/landing/Hero";
-import Featured from "../components/landing/Featured";
+import Hero from "../components/landing/Hero/Hero";
+import Featured from "../components/landing/Featured/Featured";
+import Offers from "../components/landing/Offers/Offers";
 
 function Landing() {
   return (
@@ -17,8 +18,9 @@ function Landing() {
         />
       </nav>
       <div className="landing-container">
-        <HeroSection/>
+        <Hero/>
         <Featured/>
+        <Offers/>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.scss";
-import heroIllustration from "../../assets/hero-illustration.png";
+import heroIllustration from "../../../assets/hero-illustration.png";
 
-import ActionButton from "./common/ActionButton";
+import ActionButton from "../common/ActionButton";
 
 function Hero() {
   // return a responsive grid with 2 columns using tailwindcss classnames

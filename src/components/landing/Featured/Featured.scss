@@ -1,0 +1,136 @@
+.featured-section {
+  position: relative;
+  margin-top: 3rem;
+
+  .sellers-container {
+    display: flex;
+    margin: 0 auto;
+    gap: 5px;
+    height: 500px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      height: 10px;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #f77710;
+      border-radius: 20px;
+      transition: 0.3s ease-in-out;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #f3a246;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+
+    .item-container {
+      flex: 0 0 265px;
+      margin-right: 100px;
+      margin-top: 120px;
+    }
+  }
+
+  .socials-container {
+    .socials-box {
+      position: absolute;
+      height: 260px;
+      width: 82px;
+      top: 290px;
+      right: 0;
+      background: linear-gradient(180deg, #f3a246 0%, #f77710 100%);
+      border-radius: 18px;
+
+      img {
+        margin-top: 26px;
+        width: 50px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.368));
+        cursor: pointer;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1180px) {
+    .sellers-container {
+      .item-container {
+        margin-right: 70px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .sellers-container {
+      width: 80%;
+      margin: 0;
+      .item-container {
+        margin-right: 50px;
+      }
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .section-title {
+      margin-bottom: 7em;
+    }
+
+    .socials-container {
+      .socials-box {
+        margin: 0 auto;
+        margin-top: -160px;
+        right: 0;
+        left: 0;
+        height: 82px;
+        width: 260px;
+
+        background: linear-gradient(90deg, #f3a246 0%, #f77710 100%);
+        border-radius: 18px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+
+        img {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .sellers-container {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 11rem;
+      .item-container {
+        margin-right: 50px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 514px) {
+    .socials-container {
+      .socials-box {
+        margin: 0 auto;
+        margin-top: -120px;
+      }
+    }
+  }
+}
