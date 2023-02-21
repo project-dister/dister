@@ -34,7 +34,7 @@ function Learn() {
         </p>
 
         {/* create sign up single button*/}
-        <ActionButton text="Tutorials" link="/tutorials" />
+        <ActionButton text="Sign Up" link="http://eepurl.com/ilfhBv" />
       </div>
       
     </div>

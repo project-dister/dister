@@ -30,7 +30,7 @@ function Offers() {
             </p>
 
             {/* create sign up single button*/}
-            <ActionButton text="Sign Up" link="/signup" />
+            <ActionButton text="Sign Up" link="http://eepurl.com/ilfhBv" />
           </div>
 
           <div className="offers-section-right">
