@@ -10,52 +10,68 @@ const CategoryCarousel = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 2,
     arrows: true,
-  }
 
-  //  create a list of categories for freelancers to choose from
+    // responsive settings for different screen sizes
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+          centerMode: true,
+        },
+      },
+      
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        },
+        centerMode: true,
+      },
+    ],
+  };
+
+  // create categories array with icons available in fontawesome.com for free
   const categories = [
     {
       id: 1,
-      title: "Web Development",
-      icon: "laptop-code",
+      title: "Coding",
+      icon: "fa-solid fa-code",
     },
     {
       id: 2,
-      title: "Graphic Design",
-      icon: "pencil-ruler",
+      title: "Design",
+      icon: "fa-solid fa-paint-brush",
     },
     {
       id: 3,
-      title: "Digital Marketing",
-      icon: "chart-line",
+      title: "Marketing",
+      icon: "fa-solid fa-chart-line",
     },
     {
       id: 4,
-      title: "Writing & Translation",
-      icon: "pen-nib",
+      title: "Writing",
+      icon: "fa-solid fa-pen",
     },
     {
       id: 5,
-      title: "Video & Animation",
-      icon: "video",
+      title: "Translation",
+      icon: "fa-solid fa-language",
     },
     {
       id: 6,
-      title: "Music & Audio",
-      icon: "headphones",
+      title: "Video",
+      icon: "fa-solid fa-video",
     },
     {
       id: 7,
-      title: "Programming & Tech",
-      icon: "code",
-    },
-    {
-      id: 8,
-      title: "Business",
-      icon: "briefcase",
+      title: "Audio",
+      icon: "fa-solid fa-music",
     },
   ];
 
@@ -68,7 +84,7 @@ const CategoryCarousel = () => {
               {/* <i className={`fas fa-${category.icon}`}></i> */}
               <div className="element element-2">
                 <div className="dented-icon">
-                  <i className={`fas fa-${category.icon}`}></i>
+                  <i className={category.icon}></i>
                 </div>
               </div>
             </div>
