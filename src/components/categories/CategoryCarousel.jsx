@@ -21,17 +21,15 @@ const CategoryCarousel = () => {
         settings: {
           slidesToShow: 4,
           arrows: false,
-          centerMode: true,
         },
       },
-      
+
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 3,
           arrows: false,
         },
-        centerMode: true,
       },
     ],
   };

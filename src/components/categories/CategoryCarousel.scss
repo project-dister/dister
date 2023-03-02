@@ -7,7 +7,6 @@
     text-align: center;
 
     .category-icon {
-      // font-size: 32px;
       margin-bottom: 10px;
       display: flex;
       justify-content: center;
@@ -75,25 +74,25 @@
     text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.183);
   }
 
-  // mobile 480px
-  // @media (max-width: 480px) {
-  //   .category-item {
-  //     margin: 0 20px;
-  //     text-align: center;
+  // make category-carousel mobile responsive
+  @media (max-width: 768px) {
+    .category-item {
+      margin: 0 10px;
+    }
+  }
 
-  //     .category-icon {
-  //       // font-size: 32px;
-  //       margin-bottom: 10px;
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //     }
+  @media (max-width: 576px) {
+    .slick-list {
+      margin-left: -20px;
+    }
+    .category-item {
+      margin: 0 5px;
+    }
+  }
 
-  //     .category-title {
-  //       font-size: 15px;
-  //       font-weight: 400;
-  //       color: #d0d0d0;
-  //     }
-  //   }
-  // }
+  @media (max-width: 375px) {
+    .category-item {
+      margin: 0;
+    }
+  }
 }

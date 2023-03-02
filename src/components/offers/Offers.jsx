@@ -14,9 +14,11 @@ function Offers() {
             Offers
           </span>
         </h2>
-        {/* create a container that has 3 cols on bigger screens and adjusts for smaller screens, use tailwindcss */}
-        {/* <div className="offers-container grid grid-cols-3 grid-rows-2 gap-4"> */}
-        <div className="offers-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* <div className="offers-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> */}
+        {/* on 768px width have 2 cols */}
+        {/* 4 cols on bigger screens 3 on medium and so on */}
+        {/* <div className="offers-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> */}
+        <div className="offers-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <OfferCard />
           <OfferCard />
           <OfferCard />

@@ -8,10 +8,7 @@ function OfferCard() {
       {/* image */}
       <div className="offer-card-thumbnail-container">
         <div className="offer-card-thumbnail">
-          <img
-            src="https://wallpaperaccess.com/full/1183596.jpg"
-            alt="offer"
-          />
+          <img src="https://wallpaperaccess.com/full/1183596.jpg" alt="offer" />
         </div>
         <div className="offer-card-image-profile-pic">
           <img
@@ -21,7 +18,7 @@ function OfferCard() {
         </div>
       </div>
       <div className="offer-card-title">
-        <h3>Ethereum token (erc-20 token)...</h3>
+        <h3>Ethereum token (erc-20)</h3>
       </div>
 
       {/* info */}
