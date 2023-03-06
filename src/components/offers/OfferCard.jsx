@@ -8,7 +8,7 @@ function OfferCard() {
       {/* image */}
       <div className="offer-card-thumbnail-container">
         <div className="offer-card-thumbnail">
-          <img src="https://wallpaperaccess.com/full/1183596.jpg" alt="offer" />
+          <img src="https://www.horizont.net/news/media/24/Fanta-Abgedrehte-Flasche-236323.png" alt="offer" />
         </div>
         <div className="offer-card-image-profile-pic">
           <img

@@ -1,6 +1,7 @@
 .categories-section {
   // create 1400 max width and center the section
   position: relative;
+  z-index: 2;
   max-width: 1216px;
   width: 100%;
   margin: 0 auto;
